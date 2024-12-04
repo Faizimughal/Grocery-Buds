@@ -1,0 +1,121 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(206, 225, 233);
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-box {
+  background-color: white;
+  height: 400px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input input {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid blue;
+  background-color: rgb(211, 244, 255);
+  color: rgb(11, 74, 99);
+  font-size: 20px;
+}
+.input input::placeholder {
+  color: rgb(11, 74, 99);
+}
+.input input:focus {
+  outline: none;
+  border: 2px solid blue;
+}
+.input button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: skyblue;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  &:hover {
+    border: 2px solid skyblue;
+    background: transparent;
+    color: skyblue;
+  }
+}
+.content-box .heading {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: rgb(11, 74, 99);
+}
+.content-box .button button {
+  color: red;
+  width: 200px;
+  letter-spacing: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.content-box .items-list {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+  font-size: 20px;
+}
+.content-box .items-list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(11, 74, 99);
+  margin-top: 10px;
+}
+.content-box .items-list .buttons button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.content-box .items-list .buttons .fa-edit {
+  font-size: 20px;
+  &:hover {
+    color: green;
+  }
+}
+.content-box .items-list .buttons .fa-trash {
+  font-size: 20px;
+  &:hover {
+    color: red;
+  }
+}
+.content-box .button button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+@media (max-width: 700px) {
+  .content-box {
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 5px;
+  }
+  .items-list {
+    padding: 5px;
+  }
+  .input input {
+    width: 100%;
+  }
+}
